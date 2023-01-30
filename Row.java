@@ -27,6 +27,7 @@ public class Row {
         this.height = height;
     }
 
+    //count out length of characters in this row from index 0 to letter-1
     public int getOffset(int letter) {
         int offset = 0;
         for (int i=0; i<letter; ++i) {

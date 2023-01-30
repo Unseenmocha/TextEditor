@@ -1,9 +1,8 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.util.*;
 
 public class TextEditor {
-    private Frame frame = new Frame("Text Editor");;
+    private Frame frame = new Frame("Text Editor");
     private TextArea textArea;
 
     public TextEditor() {
@@ -14,7 +13,8 @@ public class TextEditor {
             }
         });
         frame.setVisible(true);
-        textArea = new TextArea(frame.getGraphics().getFontMetrics(frame.getFont()));
+        FontMetrics fontMetrics = frame.getGraphics().getFontMetrics(frame.getFont());
+        textArea = new TextArea(fontMetrics, 10, 5);
         frame.add(textArea);
     }
     public static void main(String[] args) {
