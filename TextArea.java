@@ -105,6 +105,7 @@ public class TextArea extends Component {
     }
 
     private void adjustScreen() {
+        System.out.println("moving");
         int cursorAbsX = cursorX + origin[0];
         int cursorAbsY = cursorY + origin[1];
         if (cursorAbsX > width-hMargin) {
