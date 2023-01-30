@@ -1,8 +1,10 @@
 import java.awt.*;
 
+//A class to hold the cursor and text objects and manage aspects of the text display area such as
+//size and shifting the view around
 public class TextArea extends Component {
     private Text text;
-    private int[] origin = {0,0};
+    private int[] origin = {0,0}; //origin point where everything is drawn from
     private Cursor cursor;
     private int width;
     private int height;
@@ -57,6 +59,7 @@ public class TextArea extends Component {
     }
 }
 
+//class to hold information about the cursor
 class Cursor {
     public int width;
     public int height;

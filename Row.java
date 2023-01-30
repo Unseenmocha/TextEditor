@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.util.*;
 
+//class to keep track of a row of text
 public class Row {
     private ArrayList<Character> chars = new ArrayList<Character>();
     private int length = 0;

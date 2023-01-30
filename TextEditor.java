@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
+//main class to set up window
 public class TextEditor {
     private Frame frame = new Frame("Text Editor");
     private TextArea textArea;
